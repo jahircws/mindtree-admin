@@ -108,10 +108,10 @@
 							</table>
 						</div>
 						<div class="card-footer">
-							<p class="text-danger font-weight-bold">This is system generated payment receipt hence no signature required Course/Training Fees is not entitled for refund under Terms of Services</p>
+							<p style="color: #3f1651; font-weight: 600;">This is system generated payment receipt hence no signature required Course/Training Fees is not entitled for refund under Terms of Services</p>
 						</div>
 					</div>
-					<h6 class="mt-3 text-center noprint"><a href="javascript:printPageArea('printable');" class="btn btn-primary btn-sm">Print</a> <a href="https://mindtreeinc.com" class="btn btn-danger btn-sm">Back</a></h6>
+					<h6 class="mt-3 text-center noprint"><a href="javascript:printPageArea('printable');" class="btn btn-sm" style="background-color: #3f1651; color: #fff;">Print</a> <a href="https://mindtreeinc.com" class="btn btn-sm" style="background-color: #e53f71; color: #fff;">Back</a></h6>
 				</div>
 			</div>
 		</div>

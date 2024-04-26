@@ -95,20 +95,20 @@ label {
                 <label>Last Qualification<span class="text-danger">*</span></label>: <?= $fp[0]->qualification; ?>
             </div>
             <div class="form-group">
-                <label>Name of Board/University<span class="text-danger">*</span></label>: <?= $fp[0]->board_uni; ?>
+                <label>Degree/Certification/Standard<span class="text-danger">*</span></label>: <?= $fp[0]->board_uni; ?>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Passing Year<span class="text-danger">*</span></label>: <?= $fp[0]->pass_year; ?>
+                        <label>Passing Year<span class="text-danger">*</span></label>: <?php // $fp[0]->pass_year; ?>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label>Grade/Class/Percentage<span class="text-danger">*</span></label>: <?= $fp[0]->grade; ?>
+                        <label>Grade/Class/Percentage<span class="text-danger">*</span></label>: <?php // $fp[0]->grade; ?>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <h4 class="font-weight-bold heading text-center">KYC Details</h4>
             <div class="row">

@@ -148,7 +148,7 @@ class Home extends CI_Controller {
             $ext = pathinfo($_FILES['fl_profiledp']['name'], PATHINFO_EXTENSION);
             
             // Check if file extension is allowed
-            if (!in_array($ext, $allowed_types)) {
+            if (!in_array(strtolower($ext), $allowed_types)) {
                 $this->form_validation->set_message('check_file_type', 'The {field} must be a JPG, JPEG, or PNG file.');
                 return FALSE;
             }
@@ -164,7 +164,7 @@ class Home extends CI_Controller {
             $ext = pathinfo($_FILES['fl_adhaar_front']['name'], PATHINFO_EXTENSION);
             
             // Check if file extension is allowed
-            if (!in_array($ext, $allowed_types)) {
+            if (!in_array(strtolower($ext), $allowed_types)) {
                 $this->form_validation->set_message('check_addhar_front_file_type', 'The {field} must be a JPG, JPEG, or PNG file.');
                 return FALSE;
             }
@@ -180,7 +180,7 @@ class Home extends CI_Controller {
             $ext = pathinfo($_FILES['fl_adhaar_back']['name'], PATHINFO_EXTENSION);
             
             // Check if file extension is allowed
-            if (!in_array($ext, $allowed_types)) {
+            if (!in_array(strtolower($ext), $allowed_types)) {
                 $this->form_validation->set_message('check_addhar_back_file_type', 'The {field} must be a JPG, JPEG, or PNG file.');
                 return FALSE;
             }
@@ -196,7 +196,7 @@ class Home extends CI_Controller {
             $ext = pathinfo($_FILES['fl_pancard']['name'], PATHINFO_EXTENSION);
             
             // Check if file extension is allowed
-            if (!in_array($ext, $allowed_types)) {
+            if (!in_array(strtolower($ext), $allowed_types)) {
                 $this->form_validation->set_message('check_pancard_file_type', 'The {field} must be a JPG, JPEG, or PNG file.');
                 return FALSE;
             }
@@ -247,8 +247,8 @@ class Home extends CI_Controller {
         $this->form_validation->set_rules('hs', 'Qualification', 'required');
         // $this->form_validation->set_rules('hsboard', 'Degree Name', 'required');
         $this->form_validation->set_rules('hsboard', 'Board/University', 'required');
-        $this->form_validation->set_rules('hsyear', 'Passing Year', 'required');
-        $this->form_validation->set_rules('hsgrade', 'Grade', 'required');
+        // $this->form_validation->set_rules('hsyear', 'Passing Year', 'required');
+        // $this->form_validation->set_rules('hsgrade', 'Grade', 'required');
 
 		if ($this->form_validation->run() === FALSE) {
 			$resp['msg'] = validation_errors();
@@ -292,8 +292,8 @@ class Home extends CI_Controller {
 			$data['pan_no'] = strtoupper(trim($_POST['pan_no'])); 
 			$data['qualification'] = $_POST['hs']; 
 			$data['board_uni'] = $_POST['hsboard']; 
-			$data['pass_year'] = $_POST['hsyear']; 
-			$data['grade'] = $_POST['hsgrade']; 
+			// $data['pass_year'] = $_POST['hsyear']; 
+			// $data['grade'] = $_POST['hsgrade']; 
 			$data['status'] = $_POST['status']; 
 
 			$upload_dir = './assets/images/candidates/';

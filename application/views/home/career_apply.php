@@ -210,7 +210,7 @@
 				</div>
 
 				<div class="tab">
-					<h4 class="font-weight-bold heading text-center">Qualification Details</h4>
+					<h4 class="font-weight-bold heading text-center">Select Qualification</h4>
 					<div class="form-group">
 						<label>Last Qualification<span class="text-danger">*</span></label>
 						<select name="hs" id="hs" class="form-select">
@@ -222,14 +222,14 @@
 						</select>
 					</div>
 					<div class="form-group">
-						<label>Name of Board/University<span class="text-danger">*</span></label>
+						<label>Name of Degree/Certification/Standard<span class="text-danger">*</span></label>
 						<input type="text" name="hsboard" id="hsboard" class="form-control" value="<?= $fp[0]->board_uni; ?>" placeholder="BA/BSc/BCOM/BTECH/BE/MCA/MA/MCOM/MSc">
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
 								<label>Passing Year<span class="text-danger">*</span></label>
-								<input type="text" name="hsyear" id="hsyear" class="form-control" value="<?= $fp[0]->pass_year; ?>">
+								<input type="text" name="hsyear" id="hsyear" class="form-control" value="<?php //$fp[0]->pass_year; ?>">
 							</div>
 						</div>
 					</div>
@@ -237,10 +237,10 @@
 						<div class="col-md-6">
 							<div class="form-group">
 								<label>Grade/Class/Percentage<span class="text-danger">*</span></label>
-								<input type="text" name="hsgrade" id="hsgrade" class="form-control" value="<?= $fp[0]->grade; ?>">
+								<input type="text" name="hsgrade" id="hsgrade" class="form-control" value="<?php // $fp[0]->grade; ?>">
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 
 				<div class="tab">
