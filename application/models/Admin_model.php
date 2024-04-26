@@ -225,7 +225,13 @@ class Admin_model extends CI_Model {
 	{
 		return $this->videodb->get('candidate_login')->num_rows();
 	}
-
+	public function get_all_states($id = 0){
+		if($id != 0){
+			$this->db->where('state_id', $id);
+		}
+		$this->db->order_by('state_title', 'ASC');
+		return $this->db->get('state')->result();
+	}
 	public function get_all_districts($id = 0)
 	{
 		if($id != 0){

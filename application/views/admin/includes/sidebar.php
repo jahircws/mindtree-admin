@@ -9,9 +9,12 @@
       <li class="dropdown active">
         <a href="<?= base_url('masteradmin/dashboard'); ?>" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
       </li>
-      <li class="menu-header">Manage LMS</li>
-      <li><a class="nav-link" href="<?= base_url('masteradmin/coupons'); ?>">Coupons</a></li>
+      <li class='menu-header'>Common</a></li>
+      <li><a class="nav-link" href="<?= base_url('masteradmin/states'); ?>">States</a></li>
       <li><a class="nav-link" href="<?= base_url('masteradmin/districts'); ?>">Districts</a></li>
+      <li class="menu-header">Manage LMS</li>
+
+      <li><a class="nav-link" href="<?= base_url('masteradmin/coupons'); ?>">Coupons</a></li>
       <li><a class="nav-link" href="<?= base_url('masteradmin/candidates'); ?>">Candidates</a></li>
       <!-- <li><a class="nav-link" href="<?php // base_url('masteradmin/subjects'); ?>">Subjects</a></li> -->
       <li><a class="nav-link" href="<?= base_url('courseadmin/course_categories'); ?>"><i data-feather="anchor"></i><span> Course Category</span></a></li>
