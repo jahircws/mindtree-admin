@@ -216,6 +216,25 @@ class Masteradmin extends CI_Controller {
 		echo updateData('coupon_codes', $data, 'id='.$_POST['prim_id']);
 	}
 	/*================================================================================================== */
+	/* States*/
+	public function states()
+	{
+		if($this->session->has_userdata('adminData') && $_SESSION['adminData']['isLoggedIn']){
+			$data['pageTitle'] = 'States | AVCET';
+			$data['pageName'] = 'states';
+			$data['states'] = $this->amodel->get_all_states();
+
+			if(isset($_GET['state_id'])){
+				$data['dist'] = $this->amodel->get_all_districts($_GET['state_id']);
+			}else{
+				$data['dist'][0] = (object)array('id'=>0, 'name'=>"");
+			}
+
+			$this->load->view('admin/index', $data);
+		}else{
+			redirect(base_url('masteradmin'));
+		}
+	}
 	/*DISTRICT*/
 	public function districts()
 	{
