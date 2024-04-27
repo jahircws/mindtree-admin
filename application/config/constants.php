@@ -87,7 +87,7 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 define('RAZORPAY_TEST', array('key_id'=>'rzp_test_qBySNvxNYjGo28', 'key_secret'=>'xwDAiROXcEPEb4WiGLZQqV8b'));
 
 // define('RAZORPAY_LIVE', array('key_id'=>'rzp_live_vL4sQMVZ21cCqW', 'key_secret'=>'PFS6wpWKBogxD5KWItSDsfN9'));
-define('RAZORPAY_LIVE', array('key_id'=>'rzp_live_7xzE8HVrXRkODf', 'key_secret'=>'GiruPWVoitnGX3KB249zDErD'));
+define('RAZORPAY_LIVE', array('key_id'=>'rzp_live_SmSa90kcLAzVkk', 'key_secret'=>'naRETgPdWUa1R4Wp8jbFg0Cp'));
 
 define('EMAIL_CONFIG', array('host'=>"mail.acelnvt.org", 'port'=>"465", 'email'=>"noreply@acelnvt.org", 'password'=>"p%wFqe]exj;1"));
 

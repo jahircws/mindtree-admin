@@ -16,7 +16,6 @@
 
       <li><a class="nav-link" href="<?= base_url('masteradmin/coupons'); ?>">Coupons</a></li>
       <li><a class="nav-link" href="<?= base_url('masteradmin/candidates'); ?>">Candidates</a></li>
-      <!-- <li><a class="nav-link" href="<?php // base_url('masteradmin/subjects'); ?>">Subjects</a></li> -->
       <li><a class="nav-link" href="<?= base_url('courseadmin/course_categories'); ?>"><i data-feather="anchor"></i><span> Course Category</span></a></li>
       <li class="dropdown">
         <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="monitor"></i><span>Short Courses</span></a>
