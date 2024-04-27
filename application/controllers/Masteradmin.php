@@ -281,9 +281,9 @@ class Masteradmin extends CI_Controller {
 	}
 	public function changeDistrictStatus()
 	{
-		$data['district_active'] = $_POST['status'];
+		$data['district_status'] = $_POST['status'];
 
-		echo updateData('district', $data, 'id='.$_POST['prim_id']);
+		echo updateData('district', $data, 'districtid='.$_POST['prim_id']);
 	}
 
 	/*================================================================================================== */

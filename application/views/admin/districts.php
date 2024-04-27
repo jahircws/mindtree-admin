@@ -36,8 +36,8 @@
                     					echo '<tr id="row_'.$row->districtid.'">';
                     					echo '<td>'.$i.'</td>';
                     					echo '<td>'.$row->district_title.'</td>';
-                    					echo '<td>'.(($row->district_status)? '<div class="badge badge-success badge-shadow">Active</div>' : '<div class="badge badge-warning badge-shadow">Inactive</div>').'</td>';
-                    					echo '<td><a href="javascript:toggleStatus('.$row->districtid.', '.(($row->district_status)? 'Deactive' : 'Active').');" class="btn btn-warning btn-sm ml-2" id="btn_status_'.$row->districtid.'">Status</a></td>';
+                    					echo '<td>'.(($row->district_status=='Active')? '<div class="badge badge-success badge-shadow">Active</div>' : '<div class="badge badge-warning badge-shadow">Inactive</div>').'</td>';
+                    					echo '<td><a href="javascript:toggleStatus('.$row->districtid.', `'.(($row->district_status=='Active')? 'Deactive' : 'Active').'`);" class="btn btn-warning btn-sm ml-2" id="btn_status_'.$row->districtid.'">Status</a></td>';
                     					echo '</tr>';
 
                     					$i++;
@@ -65,7 +65,7 @@
 				$('#btn_status_'+prim_id).addClass('btn-progress');
 				$('#btn_status_'+prim_id).attr('disabled', 'disabled');
 			},
-			url: baseURL+'Acevtadmin/changeDistrictStatus',
+			url: baseURL+'masteradmin/changeDistrictStatus',
 			type: 'post',
 			data: { prim_id: prim_id, status: status },
 			success: (resp)=>{
